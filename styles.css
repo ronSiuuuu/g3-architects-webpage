@@ -126,14 +126,133 @@ main>section{
   margin-bottom: 32px;
 }
 
+/* advertise styling */
+.advertise{
+  max-width: 1440px;
+  gap: 146px;
+
+}
+
+.advertise-title{
+  font-weight: 800;
+  font-size: 2.5rem;
+  border-left:  5px solid #FF900E;
+  padding-left: 21px;
+  
+}
+.box{
+  
+  max-width: 550px;
+  border-radius: 8px;
+  
+ box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+ margin-bottom: 20px;
+ padding: 30px;
+ 
+  
+}
+.box-title{
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 
+.Experience{
+  padding: 46px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#year{
+  font-size: 4rem;
+  font-weight: 800px;
+}
+#exp{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* facts */
+.facts-title{
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
+.facts-card{
+  max-width: 240px;
+  border-radius: 8px;
+  border: 1px solid #FF900E;
+ 
+ padding: 40px ;
+ text-align: center;
+ 
+  
+}
+.fact-card-conatiner{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ 
+  
+}
+.facts-description{
+  margin-bottom: 50px;
+}
+.number{
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin: 0;
+}
+.text{
+  margin: 0;
+}
+
+
+/* sponsor */
+.sponsor-title{
+font-size: 2.8rem;
+font-weight: 700;
+}
+.sponsor-icon{
+  margin-top: 50px;
+  display: flex;
+ gap: 150px;
+ filter: grayscale(100%);
+ margin-bottom: 130px;
+ max-width: 240px;
+}
+.sponsor-text{
+  
+   display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; 
+}
+footer{
+  max-width: 1440px;
+  
+ 
+}
+
+.end{
+ display: flex;
+  
+  margin: 0 auto;
+ 
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 240px;
+  height: 100px;
+ 
+}
 
   /* responsive for mobile */
   @media screen and (max-width:576px) {
     .navbar,
     .list-container,
-    .features
+    .features,
+    .advertise,
+    .sponsor-icon 
     {
       flex-direction: column;
     }
@@ -143,16 +262,57 @@ main>section{
     .features-text{
       margin-left: 10px;
     }
+    .advertiser img{
+      width: 100%;
+    }
+    .Experience{
+      margin-top: 5px;
+      margin-left: 0px;
+
+    }
+    .sponsor-icon {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .fact-card-conatiner{
+      grid-template-columns: repeat(2,1fr);
+    }
+    
+    .end{
+      margin-top: 100px;
+    }
+   
   }
   /* responsive for medium device */
 
   
  @media screen and (min-width:576px) and (max-width:990px) {
     .navbar,
-    .list-container, .features
+    .list-container, 
+    .features,
+     .sponsor-icon ,
+     .advertise
     {
       flex-direction: column;
     }
+    .advertiser img{
+      width: 100%;
+    }
+    .Experience{
+      margin-top: 5px;
+      margin-left: 0px;
 
+    }
+    .sponsor-icon {
+      width: 100%;
+      margin: 0 auto;
+    }
+    .fact-card-conatiner{
+      grid-template-columns: repeat(2,1fr);
+    }
+    
+    .end{
+      margin-top: 100px;
+    }
     
   }
